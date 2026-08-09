@@ -89,13 +89,13 @@ export const DEFAULT_CONFIG: GardenConfig = {
   spawnDistance: 30,
   minFlowerSize: 0.7,
   maxFlowerSize: 1.4,
-  maxFlowers: 650,
-  flowerLifetime: 120000,
-  smoothingFactor: 0.2,
+  maxFlowers: 1000,
+  flowerLifetime: 300000, // 300 seconds (5 minutes)
+  smoothingFactor: 0.5,    // 50%
   showWebcamBg: true,
-  webcamOpacity: 0.85,
+  webcamOpacity: 0.85,    // 85%
   webcamBlur: 0,
   sparkleDensity: 3,
   enableButterflies: true,
-  showLandmarks: false,
+  showLandmarks: true,    // Enabled by default as requested
 };
