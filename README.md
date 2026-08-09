@@ -5,7 +5,7 @@
 ![Flower Motion Preview](src/assets/hero.png)
 
 ## ✨ Features
-
+   
 - **👐 Dual-Hand Simultaneous Air Drawing**: Move your index finger(s) to grow continuous flower trails in real time.
 - **🤌 Pinch Cluster Burst**: Pinch your thumb and index finger together to trigger a floral explosion.
 - **🖐️ Open Palm BOOM Blast**: Push your open palm forward to scatter and blast active flowers into floating petals and sparkles across your screen.
