@@ -1,32 +1,53 @@
-# React + TypeScript + Vite
+# 🌸 Flower Motion - Interactive Air Garden
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Flower Motion** is an interactive, browser-based web experience built with **React**, **Vite**, **TypeScript**, **MediaPipe AI Hand Landmarker**, and **HTML Canvas**. Users move their finger(s) in front of their webcam to paint and grow a living floral garden in real time.
 
-Currently, two official plugins are available:
+![Flower Motion Preview](src/assets/hero.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **👐 Dual-Hand Simultaneous Air Drawing**: Move your index finger(s) to grow continuous flower trails in real time.
+- **🤌 Pinch Cluster Burst**: Pinch your thumb and index finger together to trigger a floral explosion.
+- **🖐️ Open Palm BOOM Blast**: Push your open palm forward to scatter and blast active flowers into floating petals and sparkles across your screen.
+- **🎨 6 Procedural Flower Species**: Daisy, Pink Blossom, Sunflower, White Wildflower, Purple Cosmos, and Blue Hydrangea rendered dynamically on HTML Canvas.
+- **🦋 Living Atmosphere**: Animated butterflies that flutter around mature gardens and floating sparkle dust.
+- **⚙️ Customization**: Adjust spawn density, maximum flower limits (up to 1,000 flowers), visibility duration (up to 5 minutes), smoothing filters, and camera opacity/blur.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the Oxlint configuration
+- **Framework**: React 19 + TypeScript + Vite 8
+- **AI Hand Tracking**: `@mediapipe/tasks-vision` (MediaPipe HandLandmarker running GPU inference)
+- **Graphics**: HTML5 Canvas (procedural vector shapes, spring physics, LERP position smoothing)
+- **Styling**: Tailwind CSS + Lucide Icons + Glassmorphism aesthetic
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Local Setup
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Vanshdarji7/flowers-motion.git
+   cd flowers-motion
+   ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the local development server**:
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:5173` in your browser.
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+## 🔒 Privacy
+
+Webcam streams are processed **100% locally** on your device using WebGL/WASM MediaPipe inference. Zero video data is stored, recorded, or sent to external servers.
+
+## 📜 License
+
+MIT License © 2026 Vanshdarji7
