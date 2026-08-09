@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { useCamera } from './hooks/useCamera';
 import { useHandTracking } from './hooks/useHandTracking';
 import { StartScreen } from './components/StartScreen';
@@ -92,6 +93,8 @@ export function App() {
           onRetry={handleStart}
         />
       )}
+
+      <Analytics />
     </div>
   );
 }
